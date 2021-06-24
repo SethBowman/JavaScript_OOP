@@ -55,31 +55,31 @@
 // gap.addProduct(Jacket("red", "Summer", "M", true, 45.99));
 // gap.addProduct(Jacket("black", "Winter", "L", false, 100.00));
 
-class OuterWear 
-{
-    constructor(color = "blue", size = "L", fabric = "polyester", pockets= 0, hood = false) 
-    {
-        this.color = color;
-        this.size = size;
-        this.fabric = fabric;
-        this.pockets = pockets;
-        this.hood = hood;
-    }
-    wear() 
-    {
-        console.log(`"Putting on the `);
-    }
-}
+// class OuterWear 
+// {
+//     constructor(color = "blue", size = "L", fabric = "polyester", pockets= 0, hood = false) 
+//     {
+//         this.color = color;
+//         this.size = size;
+//         this.fabric = fabric;
+//         this.pockets = pockets;
+//         this.hood = hood;
+//     }
+//     wear() 
+//     {
+//         console.log(`"Putting on the `);
+//     }
+// }
 
-class Jacket extends OuterWear 
-{
-    constructor(color, size, fabric, pockets, hood, season, price) 
-    {
-        super(color, size, fabric, pockets, hood);        
-        this.season = season;
-        this.price = price;
-    }
-}
+// class Jacket extends OuterWear 
+// {
+//     constructor(color, size, fabric, pockets, hood, season, price) 
+//     {
+//         super(color, size, fabric, pockets, hood);        
+//         this.season = season;
+//         this.price = price;
+//     }
+// }
 
 
 // ========== Exercise ========== //
