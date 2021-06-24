@@ -95,10 +95,16 @@ class Person
   } 
   
   info() 
-  {      
+  {
+      let formattedHobbies = this.hobbies.join(", and ");      
       console.log(
-          `My name's ${this.name}. I have ${this.pets} pets. My hometown is ${this.residence}.`
+          `My name's ${this.name}. I have ${this.pets} pets. My hometown is ${this.residence}. My hobbies are ${formattedHobbies}.`
       )
+  }
+
+  greet(name) 
+  {
+      console.log(`Hello ${name}!`);
   }
 }
 
@@ -112,6 +118,7 @@ class Coder extends Person
     }
 }
 
-const seth = new Coder("Seth", 0, "Bham", "gaming and coding", "C# and JavaScript");
+const seth = new Coder("Seth", 0, "Bham", ["gaming", "coding"], ["C#", "JavaScript"]);
 
 seth.info();
+seth.greet(seth.name);
